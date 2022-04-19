@@ -1,0 +1,103 @@
+body {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+
+.wrapper {
+    display: grid;
+    
+/*  fr = fraction   */
+    grid-template-columns: repeat(12, 1fr);
+
+/*  1st number is height, 2nd number is how big it can get  */    
+    grid-auto-rows: minmax(100px, auto);
+
+    grid-column-gap: 5em;
+
+    grid-template-areas:
+        ". h h h h h h h h h h ."
+        ". . . m m m m m m . . ."
+        ". . f f f f f f f f . .";
+
+}
+
+.header {
+    grid-area:h;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.main {
+    grid-area: m;
+
+}
+
+.footer {
+    grid-area: f;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+/* Target max screen width*/
+@media (max-width: 500px) {
+    .header {
+        background: rebeccapurple;
+    }
+}
+
+/* Target screen max width 400- */
+@media (max-width: 27.813em) {
+    .wrapper {
+        grid-template-areas:
+        "h h h h h h h h h h h h"
+        "m m m m m m m m m m m m"
+        "f f f f f f f f f f f f";
+
+    }
+}
+
+
+header h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    display: inline-block;
+}
+
+/*header img {
+    
+}*/
+
+nav {
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    margin-left: 6rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+
+}
