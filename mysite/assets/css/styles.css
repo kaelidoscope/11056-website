@@ -37,7 +37,7 @@ p {
     grid-template-areas:
         ". h h h h h h h h h h ."
         ". . . m m m m m m . . ."
-        ". . f f f f f f f f . .";
+        "f f f f f f f f f f f f";
 
 }
 
@@ -58,15 +58,23 @@ p {
     padding-bottom: 1rem;
 }
 
+.fa {
+    border-radius: 45%;
+        max-width: 20%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
 
 /* Target max screen width*/
 @media (max-width: 500px) {
     .header {
-        background: rebeccapurple;
+        background: rgb(191, 191, 191);
     }
 }
 
-/* Target screen max width 400- */
+/* Target screen max width 400px */
 @media (max-width: 27.813em) {
     .wrapper {
         grid-template-areas:
@@ -84,7 +92,7 @@ header h1 {
 }
 
 header img {
-    
+    max-width: 50%;
 }
 
 nav {
@@ -101,3 +109,33 @@ nav ul li a {
     text-decoration: none;
 
 }
+/* Give the footer a distinct colour*/
+footer {
+    background-color: rgb(60, 60, 60);
+    display:flex;
+}
+/* style and resize footer logo*/
+footer img {
+    padding:1rem;
+    max-width: 25%;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color:blanchedalmond;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
