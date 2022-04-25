@@ -108,9 +108,9 @@ a {
     .header {
         background: rgb(191, 191, 191);
     }
-    .footer {
+   /* .footer {
 
-    }
+    }*/
 }
 
 /* Target screen max width 400px */
@@ -182,8 +182,9 @@ footer ul li a {
     color: white;
 }
 
-.heroImage {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5);
+/*.heroImage {
+    background-image: url("assets/lakeBG.jpg");
+    background-image: linear-gradient (rgba(0, 0, 0, 0.5,) rgba(0, 0, 0, 0.5);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
