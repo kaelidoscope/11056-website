@@ -53,27 +53,21 @@ img {
     height: auto; 
 }
 
-button {
-}
-
 .wrapper {
     max-width: 100%;
     display: grid;
-    margin: 0; auto;
-    
+    margin: 0, auto;
+
 /*  fr = fraction   */
     grid-template-columns: repeat(12, 1fr);
-
-/*  1st number is height, 2nd number is how big it can get  */    
+/*  1st number is height, 2nd number is how big it can get  */   
     grid-auto-rows: minmax(100px, auto);
 
     grid-column-gap: 5em;
-
     grid-template-areas:
-        "h h h h h h h h h h h ."
+        "h h h h h h h h h h h h"
         "m m m m m m m m m m m m"
         "f f f f f f f f f f f f";
-
 }
 
 .header {
@@ -88,7 +82,6 @@ button {
     margin: 0%, 6rem;
     justify-content: center;
     align-items: center;
-
 }
 
 .footer {
@@ -139,7 +132,6 @@ button {
     .footer {
         max-height: auto;
         display: flex;
-
     }
 }
 
@@ -150,7 +142,9 @@ button {
         "h h h h h h h h h h h h"
         "m m m m m m m m m m m m"
         "f f f f f f f f f f f f";
-
+    }
+    .footer {
+        display: inline-flexbox;
     }
 }
 
@@ -187,8 +181,6 @@ nav ul li {
     color: blanchedalmond;
 }
 
-
-
 /* style and resize footer logo*/
 footer img {
     padding: 1rem;
@@ -200,18 +192,6 @@ footer ul li a {
     color:blanchedalmond;
     margin: 1rem;
 }
-
-
-/*.heroImage {
-    background-image: url("assets/lakeBG.jpg");
-    background-image: linear-gradient (rgba(0, 0, 0, 0.5,) rgba(0, 0, 0, 0.5);
-    max-width: 100%;
-    max-height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}*/
 
 .heroImage h1 h2 p button {
     text-align: center;
@@ -226,4 +206,3 @@ footer ul li a {
     max-width: 50%;
     max-height: auto;
 }
-
