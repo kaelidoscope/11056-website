@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    max-width: 100%;
 }
 
 h1 {
@@ -45,12 +45,21 @@ p {
 a {
     text-decoration: none;
     color: black;
+    line-height: 1.5em; 
 }
 
+img { 
+    max-width: 100%; 
+    height: auto; 
+}
 
+button {
+}
 
 .wrapper {
+    max-width: 100%;
     display: grid;
+    margin: 0; auto;
     
 /*  fr = fraction   */
     grid-template-columns: repeat(12, 1fr);
@@ -61,7 +70,7 @@ a {
     grid-column-gap: 5em;
 
     grid-template-areas:
-        ". h h h h h h h h h h ."
+        "h h h h h h h h h h h ."
         "m m m m m m m m m m m m"
         "f f f f f f f f f f f f";
 
@@ -75,9 +84,9 @@ a {
 
 .main {
     grid-area: m;
-    padding: 1rem, 0;
-    margin: 0, auto;
-    align-content: center;
+    padding: 0%, auto;
+    margin: 0%, 6rem;
+    justify-content: center;
     align-items: center;
 
 }
@@ -86,31 +95,52 @@ a {
     grid-area: f;
     background-color: rgb(60, 60, 60);
     display: flex;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
     text-decoration: none;
     color: blanchedalmond;
 
 }
-
+/*Social media icons copied from w3Schools*/
 .fa {
-    border-radius: 45%;
-    max-width: 2rem;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
     text-decoration: none;
+    margin: 5px 2px;
 }
 
 .fa:hover {
     opacity: 0.7;
 }
 
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+
 /* Target max screen width*/
 @media (max-width: 500px) {
     .header {
-        background: rgb(191, 191, 191);
+       display: flex;
     }
-   /* .footer {
+    .footer {
+        max-height: auto;
+        display: flex;
 
-    }*/
+    }
 }
 
 /* Target screen max width 400px */
@@ -132,6 +162,7 @@ header h1 {
 
 header img {
     max-width: 50%;
+    height: auto;
 }
 
 nav {
@@ -156,47 +187,43 @@ nav ul li {
     color: blanchedalmond;
 }
 
+
+
 /* style and resize footer logo*/
 footer img {
     padding: 1rem;
     max-width: 25%;
+    max-width: auto;
 }
 
 footer ul li a {
     color:blanchedalmond;
-    padding: 1rem;
+    margin: 1rem;
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-  
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
 
 /*.heroImage {
     background-image: url("assets/lakeBG.jpg");
     background-image: linear-gradient (rgba(0, 0, 0, 0.5,) rgba(0, 0, 0, 0.5);
-    height: 50%;
+    max-width: 100%;
+    max-height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+}*/
 
-/*{
+.heroImage h1 h2 p button {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: blanchedalmond;
-}*/
+}
+
+.covid img {
+    max-width: 50%;
+    max-height: auto;
+}
+
